@@ -1,7 +1,11 @@
-# x = lambda a: a + b 
-# b = int(input("Enter b : "))
-# c = int(input("Enter c : "))
-# print(x(c))
+x = lambda a: a + b 
+b = int(input("Enter b : "))
+c = int(input("Enter c : "))
+print(x(c))
+
+
+x = lambda a : a + 10
+print(x(5))
 
 
 '''
@@ -13,8 +17,9 @@ Enter c : 283
 286
 
 '''
-
+## this won't work here because in the lambda function i am taking no arguments
 x = lambda : a + b 
+print('\n')
 a = int(input("Enter a : "))
 b = int(input("Enter b : "))
 c = int(input("Enter c : "))
@@ -27,3 +32,22 @@ Traceback (most recent call last):
 TypeError: <lambda>() takes 0 positional arguments but 1 was given
 
 '''
+
+# Here i am defining three arguments, but passing only two, and getting results for two 
+
+x = lambda a,b,c: a + b 
+print('\n')
+a = int(input("Enter a : "))
+b = int(input("Enter b : "))
+c = int(input("Enter c : "))
+print(x(a,b,c))
+
+## this can happen too 
+
+
+x = lambda a,b: a + b 
+print('\n')
+a = int(input("Enter a : "))
+b = int(input("Enter b : "))
+c = int(input("Enter c : "))
+print(x(a,b))
