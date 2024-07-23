@@ -74,7 +74,15 @@ def is_even(i):
 # i = int(input("Please put the input da "))
 
 # for i in range(i):
-for i in range(1, 6):
+# for i in range(1, 6):
+#     if is_even(i):
+#         print(i, " is even ")
+#     else:
+#         print(i, " is odd duh")
+    
+
+
+for i in range(1, 20, 3):
     if is_even(i):
         print(i, " is even ")
     else:
